@@ -1,7 +1,6 @@
-const fs = require('fs')
-const path = require('path')
+import getInput from '../get-input'
 
-const numbers = fs.readFileSync(path.resolve(__dirname, 'input.txt'), 'utf8').split('\n').map(number => +number).filter(number => number > 0)
+const numbers = getInput().split('\n').map(number => +number).filter(number => number > 0)
 
 const partOne = () => {
   numbers.some(number => {
