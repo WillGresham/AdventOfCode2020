@@ -2,7 +2,7 @@ import getInput from '../get-input'
 
 const parseInput = (input) => input.split('\n')
 
-const followPath = (mapData, moveX, moveY) => {
+const treesFaceplanted = (mapData, moveX, moveY) => {
   let trees = 0
   let y = 0
   while (y < mapData.length / moveY) {
@@ -16,7 +16,7 @@ const followPath = (mapData, moveX, moveY) => {
 }
 
 export const partOne = (input: string): number =>
-  followPath(parseInput(input), 3, 1)
+  treesFaceplanted(parseInput(input), 3, 1)
 
 export const partTwo = (input: string): number =>
   [
@@ -26,7 +26,7 @@ export const partTwo = (input: string): number =>
     [7, 1],
     [1, 2],
   ]
-    .map(([moveX, moveY]) => followPath(parseInput(input), moveX, moveY))
+    .map(([moveX, moveY]) => treesFaceplanted(parseInput(input), moveX, moveY))
     .reduce((acc, val) => acc * val, 1)
 
 console.log(`Part 1: ${partOne(getInput())}`)
