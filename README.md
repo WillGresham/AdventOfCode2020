@@ -1,4 +1,6 @@
 # Advent of Code 2020
+![Node.js CI](https://github.com/WillGresham/AdventOfCode2020/workflows/Node.js%20CI/badge.svg?branch=master)
+
 My solutions for the [2020 set of Advent of Code](https://adventofcode.com/2020/) problems, presented in TypeScript
 
 Each solution is in a folder named by the day, matching the listings on Advent of Code
