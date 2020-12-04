@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch --silent",
+    "test:ci": "jest --silent",
     "build": "tsc"
   },
   "repository": {
