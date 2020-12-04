@@ -1,6 +1,6 @@
 import getInput from '../get-input'
 
-const data = getInput().split('\n').filter(item => item).map(item => {
+const data = getInput().split('\n').map(item => {
   const [restrictions, character, password] = item.split(' ')
   const [restrictionA, restrictionB] = restrictions.split('-')
   return {

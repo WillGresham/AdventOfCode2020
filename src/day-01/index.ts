@@ -1,6 +1,6 @@
 import getInput from '../get-input'
 
-const numbers = getInput().split('\n').map((number) => +number).filter((number) => number > 0)
+const numbers = getInput().split('\n').map((number) => +number)
 
 const partOne = () => {
   numbers.some((number) => {
