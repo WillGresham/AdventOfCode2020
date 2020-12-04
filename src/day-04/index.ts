@@ -52,7 +52,7 @@ export const partTwo = (input: string): void =>
           if (
             (
               passport.hgt.match(
-                /(1([5-8][0-9]|9[0-3]))cm|(59|6[0-9]|7[0-6])in/,
+                /^(1([5-8][0-9]|9[0-3]))cm|(59|6[0-9]|7[0-6])in$/,
               ) || []
             ).length === 0
           ) {
@@ -60,7 +60,7 @@ export const partTwo = (input: string): void =>
           }
           break
         case 'hcl':
-          if ((passport.hcl.match(/#[0-9a-f]{6}/) || []).length === 0) {
+          if ((passport.hcl.match(/^#[0-9a-f]{6}$/) || []).length === 0) {
             return false
           }
           break
@@ -74,7 +74,7 @@ export const partTwo = (input: string): void =>
           }
           break
         case 'pid':
-          if ((passport.pid.match(/[0-9]{9}/) || []).length === 0) {
+          if ((passport.pid.match(/^[0-9]{9}$/) || []).length === 0) {
             return false
           }
           break
