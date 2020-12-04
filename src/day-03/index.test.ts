@@ -1,14 +1,12 @@
 import { partOne, partTwo } from './index'
 
-jest.mock('../get-input', () => ({
-  __esModule: true,
-  default: () => '..##.......\n#...#...#..\n.#....#..#.\n..#.#...#.#\n.#...##..#.\n..#.##.....\n.#.#.#....#\n.#........#\n#.##...#...\n#...##....#\n.#..#...#.#'
-}))
+const inputData =
+  '..##.......\n#...#...#..\n.#....#..#.\n..#.#...#.#\n.#...##..#.\n..#.##.....\n.#.#.#....#\n.#........#\n#.##...#...\n#...##....#\n.#..#...#.#'
 
-it('partOne should return 7', () => {
-  expect(partOne()).toEqual(7)
+it('partOne should return 7 with provided sample data', () => {
+  expect(partOne(inputData)).toEqual(7)
 })
 
-it('partTwo should return 336', () => {
-  expect(partTwo()).toEqual(336)
+it('partTwo should return 336 with provided sample data', () => {
+  expect(partTwo(inputData)).toEqual(336)
 })
