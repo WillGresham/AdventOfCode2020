@@ -1,35 +1,23 @@
 import getInput from '../get-input'
 
-const parseInput = (input: string) => input.split('\n')
+const parseInput = (input: string) => {
+  const map = {
+    F: '0',
+    B: '1',
+    L: '0',
+    R: '1',
+  }
 
-const bsp = (searchData: number[], value: string[]): number => {
-  let arr = [...searchData]
-  value.forEach((val, i) => {
-    arr = arr.slice(
-      ['B', 'R'].indexOf(val) > -1 ? arr.length / 2 : 0,
-      ['B', 'R'].indexOf(val) > -1 ? arr.length : arr.length / 2,
-    )
-  })
-  return arr[0]
+  return input
+    .split('\n')
+    .map((item) => item.replace(/F|B|L|R/g, (match) => map[match]))
 }
 
-const getSeatIds = (input: string) => {
-  const rowArr = Array.from({ length: 128 }, (_, i) => i)
-  const colArr = Array.from({ length: 8 }, (_, i) => i)
-
-  return parseInput(input).map(
+const getSeatIds = (input: string) =>
+  parseInput(input).map(
     (ticket) =>
-      8 *
-        bsp(
-          rowArr,
-          ticket.split('').filter((item) => ['F', 'B'].indexOf(item) > -1),
-        ) +
-      bsp(
-        colArr,
-        ticket.split('').filter((item) => ['L', 'R'].indexOf(item) > -1),
-      ),
+      8 * parseInt(ticket.substr(0, 7), 2) + parseInt(ticket.substr(7, 3), 2),
   )
-}
 
 export const partOne = (input: string): number => Math.max(...getSeatIds(input))
 
