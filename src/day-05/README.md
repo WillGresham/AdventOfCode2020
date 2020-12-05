@@ -1,7 +1,7 @@
-
 # Day 5: Binary Boarding
 
 ## Part One
+
 You board your plane only to discover a new problem: you dropped your boarding pass! You aren't sure which seat is yours, and all of the flight attendants are busy with the flood of people that suddenly made it through passport control.
 
 You write a quick program to use your phone's camera to scan all of the nearby boarding passes (your puzzle input); perhaps you can find your seat through process of elimination.
@@ -43,6 +43,7 @@ Here are some other boarding passes:
 As a sanity check, look through your list of boarding passes. W**hat is the highest seat ID on a boarding pass?**
 
 # Part Two
+
 **Ding!** The "fasten seat belt" signs have turned on. Time to find your seat.
 
 It's a completely full flight, so your seat should be the only missing boarding pass in your list. However, there's a catch: some of the seats at the very front and back of the plane don't exist on this aircraft, so they'll be missing from your list as well.

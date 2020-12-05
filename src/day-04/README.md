@@ -1,6 +1,7 @@
 # Day 4: Passport Processing
 
 # Part One
+
 You arrive at the airport only to realize that you grabbed your North Pole Credentials instead of your passport. While these documents are extremely similar, North Pole Credentials aren't issued by a country and therefore aren't actually valid documentation for travel in most of the world.
 
 It seems like you're not the only one having problems, though; a very long line has formed for the automatic passport scanners, and the delay could upset your travel itinerary.
@@ -49,6 +50,7 @@ According to the above rules, your improved system would report 2 valid passport
 Count the number of **valid** passports - those that have all required fields. Treat `cid` as optional. **In your batch file, how many passports are valid?**
 
 # Part Two
+
 The line is moving more quickly now, but you overhear airport security talking about how passports with invalid data are getting through. Better add some data validation, quick!
 
 You can continue to ignore the `cid` field, but each other field has strict rules about what values are valid for automatic validation:
@@ -57,8 +59,8 @@ You can continue to ignore the `cid` field, but each other field has strict rule
 - `iyr` (Issue Year) - four digits; at least `2010` and at most `2020`.
 - `eyr` (Expiration Year) - four digits; at least `2020` and at most `2030`.
 - `hgt` (Height) - a number followed by either cm or in:
--- If `cm`, the number must be at least `150` and at most `193`.
--- If `in`, the number must be at least `59` and at most `76`.
+  -- If `cm`, the number must be at least `150` and at most `193`.
+  -- If `in`, the number must be at least `59` and at most `76`.
 - `hcl` (Hair Color) - a `#` followed by exactly six characters `0`-`9` or `a`-`f`.
 - `ecl` (Eye Color) - exactly one of: `amb` `blu` `brn` `gry` `grn` `hzl` `oth`.
 - `pid` (Passport ID) - a nine-digit number, including leading zeroes.
