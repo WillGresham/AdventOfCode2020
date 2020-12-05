@@ -9,12 +9,12 @@ const parseInput = (input) =>
       .reduce((acc, cur) => ({ ...cur, ...acc }), {}),
   )
 
-export const partOne = (input: string): void =>
+export const partOne = (input: string): number =>
   parseInput(input).filter((passport) =>
     requiredFields.every((key) => typeof passport[key] !== 'undefined'),
   ).length
 
-export const partTwo = (input: string): void =>
+export const partTwo = (input: string): number =>
   parseInput(input).filter((passport) =>
     requiredFields.every((key) => {
       if (typeof passport[key] === 'undefined') {
