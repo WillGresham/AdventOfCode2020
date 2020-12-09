@@ -6,6 +6,6 @@ it('partOne should return 11 with provided sample data', () => {
   expect(partOne(inputData)).toEqual(11)
 })
 
-it('partOne should return 6 with provided sample data', () => {
+it('partTwo should return 6 with provided sample data', () => {
   expect(partTwo(inputData)).toEqual(6)
 })

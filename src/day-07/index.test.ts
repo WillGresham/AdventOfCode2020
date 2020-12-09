@@ -8,7 +8,7 @@ it('partOne should return 4 with provided sample data', () => {
   ).toEqual(4)
 })
 
-it('partOne should return 126 with provided sample data', () => {
+it('partTwo should return 126 with provided sample data', () => {
   expect(
     partTwo(
       'shiny gold bags contain 2 dark red bags.\ndark red bags contain 2 dark orange bags.\ndark orange bags contain 2 dark yellow bags.\ndark yellow bags contain 2 dark green bags.\ndark green bags contain 2 dark blue bags.\ndark blue bags contain 2 dark violet bags.\ndark violet bags contain no other bags.',
