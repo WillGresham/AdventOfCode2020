@@ -23,3 +23,4 @@ Each solution is in a folder named by the day, matching the listings on Advent o
 | [Day 8](https://github.com/WillGresham/AdventOfCode2020/tree/master/src/day-08)| ✔ | ✔ |
 | [Day 9](https://github.com/WillGresham/AdventOfCode2020/tree/master/src/day-09)| ✔ | ✔ |
 | [Day 10](https://github.com/WillGresham/AdventOfCode2020/tree/master/src/day-10)| ✔ | ✔ |
+| [Day 11](https://github.com/WillGresham/AdventOfCode2020/tree/master/src/day-11)| ✔ | ✔ |
