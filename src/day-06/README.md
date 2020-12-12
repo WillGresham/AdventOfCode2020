@@ -1,6 +1,6 @@
 # Day 6: Custom Customs
 
-# Part One
+## Part One
 
 As your flight approaches the regional airport where you'll switch to a much larger plane, customs declaration forms are distributed to the passengers.
 
@@ -48,7 +48,7 @@ In this example, the sum of these counts is `3 + 3 + 3 + 1 + 1` = **`11`**.
 
 For each group, count the number of questions to which anyone answered "yes". **What is the sum of those counts?**
 
-# Part Two
+## Part Two
 
 As you finish the last group's customs declaration, you notice that you misread one word in the instructions:
 

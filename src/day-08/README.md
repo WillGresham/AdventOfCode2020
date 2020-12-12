@@ -50,7 +50,7 @@ Immediately **before** the program would run an instruction a second time, the v
 
 Run your copy of the boot code. Immediately before any instruction is executed a second time, **what value is in the accumulator?**
 
-# Part Two
+## Part Two
 
 After some careful analysis, you believe that **_exactly one instruction is corrupted._**
 
